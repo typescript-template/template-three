@@ -4,7 +4,7 @@
 	"typescript-template": {
 		"base": "1.0.1",
 		"jasmine": "1.0.0",
-		"node": "1.0.0"
+		"node": "1.0.1"
 	},
 	"scripts": {
 		"build": "tsc",
@@ -33,7 +33,7 @@
 		"@typescript-eslint/parser": "^5.44.0",
 		"eslint": "^8.28.0",
 		"jasmine": "^4.5.0",
-		"nodemon": "^2.0.20",
+		"nodemon": "^3.0.1",
 		"nyc": "^15.1.0",
 		"prettier": "^2.8.0",
 		"prettier-eslint": "^15.0.1",
