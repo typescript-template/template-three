@@ -7,10 +7,9 @@
 		".env.example",
 		".log",
 		".md",
-		".txt",
-		"./ui"
+		".txt"
 	],
-	"watch": ["src/", "*.*", ".env"],
-	"exec": "npm start",
+	"watch": ["./ui/"],
+	"exec": "npx vite build && npm run start",
 	"ext": "*"
 }
