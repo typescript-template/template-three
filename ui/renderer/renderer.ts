@@ -17,7 +17,7 @@ export class Renderer {
 		0x555555
 	);
 	protected toneMapping: THREE.ToneMapping = THREE.LinearToneMapping;
-	protected toneMappingExposure: number = 1;
+	protected toneMappingExposure = 1;
 
 	protected stats: Stats = new Stats();
 	protected statsElement: HTMLElement;
@@ -64,9 +64,9 @@ export class Renderer {
 		this.stats.dom.style.top = '0';
 		this.stats.dom.style.left = 'unset';
 		this.stats.dom.style.right = '0';
-		this.statsElement = this.renderer.domElement.parentElement.appendChild(
-			this.stats.dom
-		);
+		this.statsElement = this.domElement?.parentElement
+			? this.domElement.parentElement.appendChild(this.stats.dom)
+			: this.domElement.appendChild(this.stats.dom);
 	}
 
 	protected createControls() {
