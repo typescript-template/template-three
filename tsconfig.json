@@ -23,5 +23,5 @@
 		"lib": ["ES2022"]
 	},
 	"exclude": ["./dist/", "./ui/"],
-	"include": ["./scripts", "./src/", "./test/"]
+	"include": ["./scripts", "./src/", "./test/", "./vite.config.ts"]
 }
