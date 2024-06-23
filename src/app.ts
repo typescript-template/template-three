@@ -8,9 +8,9 @@ import { errorHandler } from './error';
 import { register, teardown } from './register';
 
 export class App extends _Bootstrap {
-	onError = errorHandler;
-	register = register;
-	teardown = teardown;
+	override onError = errorHandler;
+	override register = register;
+	override teardown = teardown;
 }
 
 export const app = new App();
