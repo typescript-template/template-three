@@ -17,7 +17,7 @@ else {
 		.then(() => {
 			process.exit(0);
 		})
-		.catch((err) => {
+		.catch((err: string | Error) => {
 			console.error(err);
 			process.exit(1);
 		});
